@@ -32,6 +32,17 @@ As referred in the paper 'Using Data Mining for Bank Direct Marketing: An Applic
 
 In addition, we will track the Accuracy, F1, Precision and Recall to better understand the overall performance of each model. To understand the cost behind each model, we will also collect the run time of each model to better track the tradeoff of accuracy vs time.
 
+| Model         | ROC AUC   | Accuracy | F1       | Precision | Recall   | Fit Time  |
+|---------------|-----------|----------|----------|-----------|----------|-----------|
+| Baseline_Model| 0.5       | 0.887594 | 0.0      | 0.0       | 0.0      | 0.0s      |
+| Simple_lgr    | 0.656887  | 0.887594 | 0.0      | 0.0       | 0.0      | 0.07s     |
+| knn           | 0.574829  | 0.877317 | 0.105077 | 0.291803  | 0.064075 | 0.0s      |
+| svm           | 0.554438  | 0.887756 | 0.008578 | 0.6       | 0.00432  | 110.95s   |
+| dtree         | 0.57565   | 0.863154 | 0.129696 | 0.227437  | 0.090713 | 0.18s     |
+| grid_lgr      | 0.65536   | 0.600388 | 0.258113 | 0.163091  | 0.618431 | 0.88s     |
+| grid_knn      | 0.595757  | 0.88549  | 0.070913 | 0.402985  | 0.038877 | 138.61s   |
+| grid_svm      | 0.59053   | 0.768    | 0.340909 | 0.258621  | 0.5      | 59.96s    |
+| grid_dtree    | 0.642184  | 0.887756 | 0.067249 | 0.510204  | 0.035997 | 452.65s   |
 
 ### Summary Findings
 
